@@ -27,3 +27,12 @@ The REST API to the cryptopunks API is described below.
 `GET /punks/:id`
 
     http://localhost:1337/api/punks/:id
+
+## Data
+
+The cryptoPunkData.json contains a complete 10,000 entry object including every CryptoPunk.
+
+### Thanks to
+
+Github User: [cryptopunksnotdead](https://github.com/cryptopunksnotdead/punks) for the csv data
+Larva Labs: [Where](https://www.larvalabs.com/cryptopunks) it all started!
