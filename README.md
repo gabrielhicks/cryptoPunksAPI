@@ -18,7 +18,7 @@ The REST API to the cryptopunks API is described below.
 
 `GET /punks/`
 
-    http://localhost:1337/punks/
+    http://localhost:1337/api/punks/
 
 ## Find punk by number (000-9999)
 
@@ -26,4 +26,4 @@ The REST API to the cryptopunks API is described below.
 
 `GET /punks/:id`
 
-    http://localhost:1337/punks/:id
+    http://localhost:1337/api/punks/:id
