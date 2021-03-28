@@ -1,4 +1,4 @@
-# CryptoPunks API
+# CryptoPunks API Please leave a ⭐️ if found useful!
 
 ## Install
 
