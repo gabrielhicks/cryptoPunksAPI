@@ -18,7 +18,7 @@ if (!process.env.PORT) {
   process.exit(1);
 }
 
-const PORT: number = process.env.PORT || 3000;
+const PORT: number = process.env.PORT || 1337;
 
 const app = express();
 
