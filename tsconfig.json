@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "target": "es6",
-    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "es2018",
     "moduleResolution": "node",
+    "module": "commonjs",
     "sourceMap": true,
+    "rootDir": "src",
     "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*"]
-    }
+    "lib": ["esnext", "dom", "es2018", "esnext.asynciterable"],
+    "esModuleInterop": true
   },
-  "include": ["src/**/*"]
+  "exclude": ["node_modules"]
 }
