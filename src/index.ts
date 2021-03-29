@@ -14,6 +14,21 @@ dotenv.config();
  * App Variables
  */
 
+//options for cors midddleware
+const options: cors.CorsOptions = {
+  allowedHeaders: [
+    'Origin',
+    'X-Requested-With',
+    'Content-Type',
+    'Accept',
+    'X-Access-Token',
+  ],
+  credentials: true,
+  methods: 'GET',
+  origin: '*',
+  preflightContinue: false,
+};
+
 // if (!process.env.PORT) {
 //   process.exit(1);
 // }
@@ -27,7 +42,7 @@ const app = express();
  */
 
 app.use(helmet());
-app.use(cors());
+app.use(cors(options));
 app.use(express.json());
 app.use('*', punksRouter);
 
