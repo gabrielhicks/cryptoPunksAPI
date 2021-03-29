@@ -27,11 +27,9 @@ const app = express();
  */
 
 app.use(helmet());
-app.use((req, resp, next) => {
-  next();
-}, cors({ maxAge: 84600 }));
+app.use(cors());
 app.use(express.json());
-app.use('*', punksRouter);
+app.use('/api/punks', punksRouter);
 
 /**
  * Server Activation
