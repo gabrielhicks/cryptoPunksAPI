@@ -6,6 +6,9 @@
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
     "start": "ts-node src/index.ts"
   },
+  "engines": {
+    "node": "15.0.1"
+  },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",

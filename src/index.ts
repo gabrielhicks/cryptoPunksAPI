@@ -18,7 +18,7 @@ dotenv.config();
 //   process.exit(1);
 // }
 
-const PORT: any = process.env.PORT || 1337;
+const PORT: string | number = process.env.PORT || 1337;
 
 const app = express();
 
@@ -29,7 +29,7 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
-app.use('/api/punks', punksRouter);
+app.use('*', punksRouter);
 
 /**
  * Server Activation
