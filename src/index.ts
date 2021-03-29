@@ -26,9 +26,13 @@ const app = express();
  *  App Configuration
  */
 
-app.use(helmet());
 app.use(cors());
+app.use(helmet());
 app.use(express.json());
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
 app.use('/api/punks', punksRouter);
 
 /**
