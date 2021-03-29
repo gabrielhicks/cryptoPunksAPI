@@ -14,9 +14,9 @@ dotenv.config();
  * App Variables
  */
 
-if (!process.env.PORT) {
-  process.exit(1);
-}
+// if (!process.env.PORT) {
+//   process.exit(1);
+// }
 
 const PORT: any = process.env.PORT || 1337;
 
