@@ -27,7 +27,9 @@ const app = express();
  */
 
 app.use(helmet());
-// app.use(cors());
+pp.use(
+  cors({ origin: 'https://cryptopunks.herokuapp.com', credentials: true })
+);
 app.use(express.json());
 app.use('*', punksRouter);
 
