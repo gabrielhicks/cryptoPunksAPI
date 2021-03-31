@@ -28,7 +28,7 @@ The REST API to the cryptopunks API is described below.
 `GET /punks/:id`
 
     http://localhost:1337/api/punks/:id
-    https://cryptopunks.herokuapp.com/api/:id
+    https://cryptopunks.herokuapp.com/api/punks/:id
 
 ## Data
 
